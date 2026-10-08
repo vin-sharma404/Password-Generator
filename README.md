@@ -1,16 +1,58 @@
-# React + Vite
+🔐 Password Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and interactive **Password Generator** built with **React.js**.  
+It allows users to generate random passwords with a customizable length and optional numbers and symbols.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🔑 Generate random passwords
+- 📏 Customize password length from **6 to 25 characters**
+- 🔢 Option to include numbers
+- 🔣 Option to include symbols
+- 📋 Copy generated password to clipboard
+- ✅ Shows copy confirmation
+- ⚡ Password automatically regenerates when options are changed
+- 🎨 Simple and lightweight React interface
 
-## React Compiler
+## ⚙️ How It Works
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The application starts with a default password length of **8 characters**.
 
-## Expanding the ESLint configuration
+Users can:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Adjust the password length using the range slider.
+2. Enable **Allow Num** to include numbers.
+3. Enable **Allow Symbol** to include special characters.
+4. Copy the generated password using the **Copy Password** button.
+
+Whenever the length, numbers, or symbols options are changed, `useEffect()` automatically generates a new password.
+
+## 🧠 React Concepts Used
+
+### `useState`
+
+State is used to manage:
+
+- Password length
+- Generated password
+- Number inclusion
+- Symbol inclusion
+- Copy status
+
+### `useEffect`
+
+`useEffect` regenerates the password whenever any password-generation option changes:
+
+### Clipboard API
+
+
+## 👨‍💻 Author
+
+**Vinayak Sharma**
+
+Computer Science Engineering Student  
+Interested in Software Development, AI & Machine Learning.
+
+## ⭐ Support
+
+If you found this project useful, consider giving the repository a ⭐ on GitHub.
