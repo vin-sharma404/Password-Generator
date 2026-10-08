@@ -39,32 +39,12 @@ State is used to manage:
 - Symbol inclusion
 - Copy status
 
-Example:
-
-```javascript
-const [length, setLength] = useState(8)
-const [password, setPassword] = useState("")
-const [allowNum, setAllowNum] = useState(false)
-const [allowSym, setAllowSym] = useState(false)
-```
-
 ### `useEffect`
 
 `useEffect` regenerates the password whenever any password-generation option changes:
 
-```javascript
-useEffect(() => {
-  pass()
-}, [length, allowNum, allowSym])
-```
-
 ### Clipboard API
 
-The generated password can be copied using:
-
-```javascript
-navigator.clipboard.writeText(password)
-```
 
 ## 👨‍💻 Author
 
